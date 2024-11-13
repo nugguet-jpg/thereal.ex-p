@@ -1,117 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>pagina web basica</title>
+    <title>Página Web Básica</title>
 </head>
 <body>
 
-<div class="head">
+<!-- Header con logo y navbar -->
+<header class="head">
     <div class="logo">
-        <a href="#"><img src="logo.png" width="40px" height="40px" alt="logo"></a>
+        <a href="#"><img src="logo.png" width="60px" height="70" alt="logo"></a>
     </div>
     <nav class="navbar">
-        <a href="#">Bienvenidos</a>
-        <a href="#">Nostros</a>
-        <a href="#">contacto</a>
-        <a href="#">productos</a>
-        <a href="#">Catalogo</a>
-    
-
+        <a href="#bienvenidos">Bienvenidos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#productos">Productos</a>
+        <a href="#catalogo">Catálogo</a>
     </nav>
-</div>
+</header>
 
-    <header class="content header">
-        <h2 class="title">Bienvenidos</h2>
-        <p>Bienvenidos a la organizacion social de maxi pizza y yuriko sushi talca aqui enctontraras diversos temases
-        </p>
+<!-- Sección Bienvenidos -->
+<section id="bienvenidos" class="content header">
+    <h2 class="title">Bienvenidos</h2>
+    <p>Bienvenidos a la organización social de Maxi Pizza Aquí .</p>
+    <div class="btn-home">
+        <a href="#" class="btn">Saber Más</a>
+        <a href="#" class="btn">WhatsApp</a>
+    </div>
+</section>
 
-        <div class="btn-home">
-            <a href="#" class="btn">Saber Mas</a>
-            <a href="#" class="btn">Whats app</a>
+<!-- Sección Productos -->
+<section id="productos" class="content sau">
+    <h2 class="title">Productos</h2>
+    <p>Aquí encontrarás los diversos establecimientos que tenemos en Talca.</p>
+    <div class="box-container">
+        <div class="box">
+            <i class="fab fa-angular"></i>
+            <h3>Maxi Pizza Norte</h3>
+            <p><a href=""></a></p>
         </div>
-    </header>
+        <div class="box">
+            <i class="fab fa-apple"></i>
+            <h3>Maxi Pizza Foodtruck</h3>
+            <p>Yuriko Sushi</p>
+        </div>
+        
+    </div>
+</section>
 
-    <Section class="content sau">
-        <h2 class="title">productos</h2>
-        <p>aqui enctontraraslos diversos establecimientos que contamos alrededor de talca
-        </p>     
+<!-- Sección Galería -->
+<section id="galeria" class="content gallery">
+    <h2 class="title">Galería</h2>
+    <div class="gallery-container">
+        <img src="Pizza 1.jpg" alt="Imagen 1" class="gallery-item">
+        <img src="Pizza 2.jpeg" alt="Imagen 2" class="gallery-item">
+        <img src="pizza 3.jpeg" alt="Imagen 3" class="gallery-item">
+        <img src="pizza 4.jpeg" alt="Imagen 4" class="gallery-item">
+        <img src="pizza 5.jpg" alt="Imagen 5" class="gallery-item">
+        <img src="pizza 6.jpeg" alt="Imagen 6" class="gallery-item">
+    </div>
+</section>
 
-    
+<!-- Sección Acerca -->
+<section id="nosotros" class="content about">
+    <h2 class="title">Acerca</h2>
+    <p>Aquí encontrarás más información sobre el local.</p>
+</section>
+
+<!-- Sección Redes Sociales -->
+<section class="content price">
+    <article class="contain">
+        <h2 class="title">Redes Sociales</h2>
+        <p>Aquí encontrarás nuestras redes sociales y todos nuestros locales</p>
         <div class="box-container">
             <div class="box">
-             <i class="fab fa-angular"></i>
-             <h3>elit</h3>
-             <p>Maxi Pizza talca.</p>
+                <a href="https://www.instagram.com/maxipizza.talca/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Maxi Pizza Talca</h3>
+                    <p>Instagram</p>
+                </a>
             </div>
             <div class="box">
-             <i class="fab fa-apple"></i>
-             <h3>elit</h3>
-             <p>Yuriko sushi</p>
+                <a href="https://www.instagram.com/yurikosushi.talca/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Yuriko Sushi</h3>
+                    <p>Instagram</p>
+                </a>
             </div>
             <div class="box">
-             <i class="fab fa-android"></i>
-             <h3>elit</h3>
-             <p>Maxi Foodtruck</p>
- 
+                <a href="https://web.facebook.com/Maxipizzadelivery/?locale=es_LA&_rdc=1&_rdr" target="_blank">
+                    <i class="fab fa-facebook"></i> <!-- Cambié el ícono a Facebook -->
+                    <h3>Maxi Foodtruck</h3>
+                    <p>Facebook</p>
+                </a>
             </div>
- 
         </div>
+    </article>
+</section>
 
-
-        <Div class="content sau">
-            <h2 class="title">Galeria</h2>
-        
-
-            </div>
-
-        </Div>
-
-    </Section>
-
-    <section class="content about">
-        <h2 class="title">Acerca</h2>
-        <p>aqui encontraras mas info de el local</p>
-
-        <a href="#">Saber Mas</a>
-    </section>
-
-    <section class="content price">
-        <article class="contain">
-            <h2 class="title">Redes sociales</h2>
-            <p>aqui encontras nuestras redes sociales</p>
-            <div class="box-container">
-                <div class="box">
-                 <i class="fab fa-angular"></i>
-                 <h3>Maxi Pizza talca</h3>
-                 <p>Instagram</p>
-                </div>
-                <div class="box">
-                 <i class="fab fa-apple"></i>
-                 <h3>Yuriko sushi</h3>
-                 <p>Instagram</p>
-                </div>
-                <div class="box">
-                 <i class="fab fa-android"></i>
-                 <h3>Maxi Foodtruck</h3>
-                 <p>Instagram</p>
-     
-                </div>
-            
-        </article>
-
-    </section>
-
-    <section class=" content contact">
-        <h2 class="title">Contacto</h2>
-        <p>5555</p>
-        <figure class="map">
-            <img src="MAX.png" height="220px" width="50%" alt="mapa"></figure>
-
-    </section>
+<!-- Sección Contacto -->
+<section id="contacto" class="content contact">
+    <h2 class="title">Contacto</h2>
+    <p>5555</p>
+    <figure class="map">
+        <img src="MAX.png" height="220px" width="50%" alt="mapa">
+    </figure>
+</section>
 
 </body>
 </html>
